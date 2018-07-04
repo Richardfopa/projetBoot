@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to BootStrap</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <a class="navbar-brand" href="index.html">WebVision</a>
+					    </div>
+					    <div>
+					      <ul class="nav navbar-nav">
+					        <li><a href="index.html">Acceuil</a></li>
+					        <li class="active"><a href="etudiants.html">Liste Des étudiants</a></li>
+					        <li><a href="listcours.html">Liste Des Cours</a></li> 
+					        <li><a href="affectation.html">Affectation Cours</a></li> 
+					      </ul>
+					    </div>
+				  </div>
+				</nav>
+			</header>
+			<div class="jumbotron">
+			  		<div class="row">
+			  			<div class="col-lg-4 col-md-6">
+			  				<img src="imags/cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+			  			</div>
+			  			<div class="col-lg-8 col-md-6">
+			  				<h1>My First Bootstrap Page</h1>
+				   			<p>Resize this responsive page to see the effect!</p> 
+			  			</div>					   		
+			  		</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-9 col-md-9">
+					<!-- Button affectation -->
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Nouvelle Affectation</button>
+					<h2>Liste Des Affectation</h2>
+					<table class="table table-bordered">
+						<thead>
+						      <tr>
+						        <th>Noms Etudiant</th>
+						        <th>Date de Naissance</th>
+						        <th>Nom Du Cours</th>
+						        <th>Crédits</th>
+						        <th>Action</th>
+						    </tr>
+						</thead>
+						<tbody>
+						      <tr class="success">
+						        <td>John</td>
+						        <td>10/05/1996</td>
+						        <td>Software Engeneering</td>
+						        <td>2.5</td>
+						        <td>
+						        	<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Action
+											<span class="caret"></span>
+										</button>
+											<ul class="dropdown-menu">
+											    <li><a href="#">Modifier</a></li>
+											    <li><a href="#">Enregistrer</a></li>
+											    <li><a href="#">Supprimer</a></li>
+											</ul>
+									</div>
+						        </td>
+						      </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    <div class="modal-content">
+					      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title">Nouvelle Affectation</h4>
+					      </div>
+					      <div class="modal-body">
+					        	<form  role="form">
+					        		<div class="row">
+					        			<div class="col-md-6">
+					        				<div class="form-group">
+											    <label for="telephone">Etudiant:</label>
+											    <select class="form-control">
+											      <option value="Etudiant">Etudiant</option>
+											    </select>
+										    </div>
+					        			</div>
+					        			<div class="col-md-6">
+					        				<div class="form-group">
+											    <label for="aniv">Date de Naissance:</label>
+											    <input type="aniv" class="form-control " name="aniversaire" disabled="">
+											</div>
+					        			</div>
+					        		</div>
+									<div class="row">
+					        			<div class="col-md-6">
+				
+					        				<div class="form-group">
+											    <label for="cours">Cours:</label>
+											    <select class="form-control">
+											      <option value="cours">Cours</option>
+											    </select>
+										    </div>
+					        			</div>
+					        			<div class="col-md-6">
+					        				<div class="form-group">
+											    <label for="credit">Crédit:</label>
+											    <input type="credit" class="form-control " name="credits" disabled="">
+											</div>
+					        			</div>
+					        		</div>
+								</form>
+					      </div>
+					    <div class="modal-footer">
+					    	<button type="button" class="btn btn-primary">Affecter</button>
+					       	<button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+					    </div>
+				    </div>
+
+				</div>
+			</div>
+
+			
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+	</body>
+</html>

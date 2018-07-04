@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to BootStrap</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		
+		
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+					    <div class="navbar-header">
+					      <a class="navbar-brand" href="index.html">WebVision</a>
+					    </div>
+					    <div>
+					      <ul class="nav navbar-nav">
+					        <li><a href="index.html">Acceuil</a></li>
+					        <li class="active"><a href="etudiants.html">Liste Des étudiants</a></li>
+					        <li><a href="listcours.html">Liste Des Cours</a></li> 
+					        <li><a href="affectation.html">Affectation Cours</a></li> 
+					      </ul>
+					    </div>
+				  </div>
+				</nav>
+			</header>
+			<div class="jumbotron">
+			  		<div class="row">
+			  			<div class="col-lg-4 col-md-6">
+			  				<img src="imags/cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+			  			</div>
+			  			<div class="col-lg-8 col-md-6">
+			  				<h1>My First Bootstrap Page</h1>
+				   			<p>Resize this responsive page to see the effect!</p> 
+			  			</div>					   		
+			  		</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-offset-1 col-lg-9 col-md-9">
+					<h2>Liste ds étudiants</h2>
+					<table class="table table-bordered">
+						<thead>
+						      <tr>
+						        <th>Nom</th>
+						        <th>Prénom</th>
+						        <th>Téléphone</th>
+						        <th>Email</th>
+						        <th>Date De Naissance</th>
+						        <th>Action</th>
+						    </tr>
+						</thead>
+						<tbody>
+						      <tr class="success">
+						        <td>John</td>
+						        <td>Doe</td>
+						        <td>+237656444238</td>
+						        <td>john@example.com</td>
+						        <td>10/05/1996</td>
+						        <td>
+						        	<div class="dropdown">
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Action
+											<span class="caret"></span>
+										</button>
+											<ul class="dropdown-menu">
+											    <li><a href="#">Modifier</a></li>
+											    <li><a href="#">Enregistrer</a></li>
+											    <li><a href="#">Supprimer</a></li>
+											</ul>
+									</div>
+						        </td>
+						      </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+	</body>
+</html>
